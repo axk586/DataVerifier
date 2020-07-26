@@ -1,0 +1,10 @@
+
+Usquid:S1611"2Remove the parentheses around the "user" parameter(Ú’Šøşÿÿÿÿ8¬ñ»á¯.
+Usquid:S1611 "7Remove the parentheses around the "exception" parameter(¸è¢²8èÍá¯.
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ïÊÇ©8ÌñÏá¯.
+_squid:UselessImportCheck"/Remove this unused import 'java.io.FileReader'.(Â¡¢äşÿÿÿÿ8Ã–Ââ¯.
+Osquid:S1602",Remove useless curly braces around statement(Ú’Šøşÿÿÿÿ8ÌñÏá¯.
+Jsquid:S1602 ",Remove useless curly braces around statement(¸è¢²8ŸÄÎá¯.
+V
+squid:S106!"9Replace this use of System.out or System.err by a logger.(ÀÍ¢8Ó­Íá¯.

@@ -1,0 +1,12 @@
+
+[
+squid:S106$"9Replace this use of System.out or System.err by a logger.(ë¶Ûàıÿÿÿÿ8íÒ¿µí-
+[
+squid:S106 "9Replace this use of System.out or System.err by a logger.(±èâàüÿÿÿÿ8íÒ¿µí-
+Qsquid:S1068".Remove this unused "lookBehind" private field.(ö’÷˜şÿÿÿÿ8Ñ¾¤§û-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(±èâàüÿÿÿÿ8íÒ¿µí-
+Ksquid:S1068"-Remove this unused "lookAhead" private field.(½ç­‹8Ñ¾¤§û-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(â¢¸8êå¿µí-
+[squid:S1197"8Move the array designator from the variable to the type.(Ê¦ùûÿÿÿÿ8Ê“¥§û-

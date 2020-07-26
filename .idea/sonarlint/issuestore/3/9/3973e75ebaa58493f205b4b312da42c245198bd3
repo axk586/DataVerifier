@@ -1,0 +1,8 @@
+
+ª%squid:RedundantThrowsDeclarationCheck8"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(ö‰Ï™øÿÿÿÿ8éžúå¸.
+Lsquid:S1481:".Remove this unused "fieldType" local variable.(Ü×ã®8â³€æ¸.
+\squid:S4719D"9Replace charset name argument with StandardCharsets.UTF_8(¼”»Ýùÿÿÿÿ8ëáþå¸.
+ª%squid:RedundantThrowsDeclarationCheckR"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(ËÚžèøÿÿÿÿ8’†÷å¸.
+[squid:S1854:"=Remove this useless assignment to local variable "fieldType".(Ü×ã®8â³€æ¸.
+`squid:S1854|"=Remove this useless assignment to local variable "fieldType".(Ë•½úûÿÿÿÿ8‰ñ‚æ¸.
+Qsquid:S1481|".Remove this unused "fieldType" local variable.(Ë•½úûÿÿÿÿ8‰ñ‚æ¸.

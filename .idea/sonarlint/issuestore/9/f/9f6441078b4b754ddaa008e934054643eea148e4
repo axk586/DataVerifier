@@ -1,0 +1,7 @@
+
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ó·€õ8¡ÓøÈ´.
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ï¿È´.
+Fsquid:S1148!"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ï¿È´.
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8îŒàË´.
+bsquid:S2147 "DCombine this catch with the one at line 30, which has the same body.(ï­£Ä8ï¿È´.
