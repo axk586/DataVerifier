@@ -45,7 +45,7 @@ public class AvroCsvDataflow {
         String getCsvDelimiter();
         void setCsvDelimiter(String delimiter);
 
-        @Default.String("1")
+        @Default.Integer(1)
         Integer getNumShards();
         void setNumShards(Integer delimiter);
 
