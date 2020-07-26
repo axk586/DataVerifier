@@ -1,4 +1,4 @@
-package com.equifax.ews.model;
+package com.equifax.ews.dataflow;
 
 import org.apache.avro.Schema;
 import org.apache.avro.generic.GenericRecord;
@@ -41,10 +41,14 @@ public class AvroCsvDataflow {
         String getAvroSchema();
         void setAvroSchema(String value);
 
-
         @Default.String(",")
         String getCsvDelimiter();
         void setCsvDelimiter(String delimiter);
+
+        @Default.String("1")
+        Integer getNumShards();
+        void setNumShards(String delimiter);
+
     }
 
     public static void main(String[] args) throws IOException {
@@ -97,8 +101,10 @@ public class AvroCsvDataflow {
                 AvroIO.readGenericRecords(schemaJson).from(options.getInputFile()))
                 .apply("Convert Avro to CSV formatted data",
                         ParDo.of(new ConvertAvroToCsv(schemaJson, options.getCsvDelimiter())))
-                .apply("Write CSV formatted data", TextIO.write().to(options.getOutput())
-                        .withSuffix(".csv"));
+                .apply("Write CSV formatted data",
+                        TextIO.write().withWindowedWrites()
+                .withNumShards(options.getNumShards()).to(options.getOutput())
+                        .withSuffix(".txt"));
 
         // Run the pipeline.
         pipeline.run().waitUntilFinish();
