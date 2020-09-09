@@ -1,10 +1,14 @@
 package com.equifax.ews;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+
 public class DateTimeFunctions {
 
     public static void main(String[] args) {
         //dateTimeSplit();
-        stringTest();
+        //stringTest();
+        dateTest();
     }
 
     public static void dateTimeSplit() {
@@ -24,5 +28,13 @@ public class DateTimeFunctions {
         String s = str.toUpperCase();
         System.out.println("After upper case :" +s);
         System.out.println("Original str :" +str);
+    }
+
+    private static void dateTest() {
+        LocalDate now = LocalDate.now();
+
+//        String dateString = new SimpleDateFormat("YYYY-MM-dd")
+//                .format(now.toDate());
+//        System.out.println(dateString);
     }
 }

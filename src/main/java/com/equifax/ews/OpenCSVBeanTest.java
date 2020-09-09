@@ -7,8 +7,10 @@ import com.opencsv.bean.CsvToBeanBuilder;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
+import java.lang.reflect.Field;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.List;
 
 public class OpenCSVBeanTest {
@@ -31,6 +33,11 @@ public class OpenCSVBeanTest {
 
         build.getCapturedExceptions().stream().forEach((exception) -> { //3
             System.out.println("Inconsistent data:" + String.join("", exception.getLine()));
+        });
+
+        Field[] declaredFields = UserBean.class.getDeclaredFields();
+        Arrays.asList(declaredFields).stream().forEach(s-> {
+            System.out.println("Field : "+s.getName());
         });
     }
 }
